@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block-parallax-1 {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.block-parallax-1 .parallax-bg {
+    background-image: url('media/bakgrunn.jpg');
+    background-position: center center;
+    background-size: cover;
+    /* background-repeat: repeat; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    min-width: 800px;
+    min-height: 800px;
+}
+
+.block-parallax-1 .md-box {
+    background-color: RGB(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: inherit;
+}
+.block-parallax-1 .md-box h1 {
+    color: #fff;
+}
+
+@media only screen and (min-width: 1000px) {
+    .block-parallax-1 .parallax-bg {
+        background-attachment: fixed;
+        background-image: url('media/bakgrunn.jpg');
+    }
+
+    .block-parallax-1 .md-box {
+        /* background-color: RGB(0, 0, 0, 0.25); */
+        /* width: 100%; */
+    }
+
+    .block-parallax-2 .parallax-bg { 	
+        background-attachment: fixed;
+    }
+
+}
+
+body, html {
+    font-family: Trebuchet MS;
+    height: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    /* border: 1px solid red; */
+    padding: 5px;
+  }
+
+@media only screen and (min-width: 1000px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .omoss {display: flex; align-items: center;}
+}
+
+h1 {
+    font-size: 500%;
+    /* color: rgb(44,  63, 11); */
+    /* padding-top: 20%; */
+}
+
+h2 {
+    color: black;
+    font-size: 35;
+    text-align: center; 
+    margin: 0;
+    padding-top: 10%;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 30;
+    text-align: center; 
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+h6 {
+    font-size: 200%;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    padding: 1%;
+    font-size: 1.5rem;
+}
+
+.tekst {
+    padding: 2%;
+    text-align: justify;
+}
+
+.logo {
+    padding: 1%;
+}
+
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    color: darkgreen;
+    width: 100%;
+}
+.collapsible-menu {
+    float: right;
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu a {
+    display:block;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+.collapsible-menu label {
+    font-size: 80;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 10%;
+    color: white;
+}
+input#menu {
+    display: none;
+}
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .menu-content {
+        max-height: 100%;
+        overflow: auto;
+        padding: 0;
+        color: white;
+    }
+    .collapsible-menu {
+        display: flex;
+        border-bottom: none;
+        box-shadow: none;
+        padding: 2% 0 0 0;
+    }
+    .collapsible-menu ul {
+        list-style-type: none;
+        padding: 0;
+        display: inline-flex;        
+    }
+    .collapsible-menu a {
+        font-size: 35px;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .collapsible-menu label {
+        display: none;
+    }
+}
+
+
+.sosialemedier {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    font-size: 30px;
+    color: black;
+}
+
+.sosialemedier:hover {
+    color: gray;
+}
+
+.sosialemedier i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* Skjemaoverlag */
+.open-overlay {
+    background-color: RGB(175, 40, 50);
+    border: none;
+    color: white;
+    padding: 2% 4%;
+    margin: 0 0 5% 0;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-overlay {
+    background-color: RGB(175, 40, 50);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.noscroll { 
+    overflow: hidden;
+  }
+  
+  .overlay { 
+    background-color: RGB(200, 200, 200, 0.4);
+    position: fixed;
+    justify-content: center;
+    overflow-y: scroll;
+    top: 0; right: 0; bottom: 0; left: 0; }
+  
+  [aria-hidden="true"]  { display: none; }
+  [aria-hidden="false"] { display: flex; }

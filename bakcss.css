@@ -11,7 +11,7 @@
     width: 100%;
 }
 .block-parallax-1 .parallax-bg {
-    background-image: url('media/bakgrunn.jpg');
+    background-image: url;
     background-position: center center;
     background-size: cover;
     /* background-repeat: repeat; */
@@ -36,7 +36,7 @@
 @media only screen and (min-width: 1000px) {
     .block-parallax-1 .parallax-bg {
         background-attachment: fixed;
-        background-image: url('media/bakgrunn.jpg');
+        background-image: url; 
     }
 
     .block-parallax-1 .md-box {
@@ -47,7 +47,7 @@
     .block-parallax-2 .parallax-bg { 	
         background-attachment: fixed;
     }
-
+  
 }
 
 body, html {
